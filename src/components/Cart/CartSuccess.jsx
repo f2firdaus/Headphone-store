@@ -42,7 +42,7 @@ const CartSuccess = ({ orderSummary }) => {
                   
               </div>
               <div className="total-placed"> <span>Total :</span>
-                 <span>{totalprice}</span> </div>
+                 <span>&#8377;{totalprice}</span> </div>
       </div>
     </>
   );
