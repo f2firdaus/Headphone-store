@@ -1,0 +1,41 @@
+.order-success{
+    text-align: center;
+    font-size: 48px;
+}
+.center-place{
+    text-align: center;
+    padding: 5px;
+}
+.orderplaced{
+    display: flex;
+    
+    justify-content: center;
+/* border: 1px solid black; */
+    /* flex-direction: column; */
+}
+.orderplaced-1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    /* background-color: red; */
+}
+.order-quantity{
+    position: relative;
+    left: -60px;
+font-weight: bold;
+    color: blue;
+    bottom: 45px;
+}
+.total-placed{
+display: flex;
+justify-content: center;
+gap: 180px;
+margin: 0 auto;
+
+width: fit-content;
+border-top: 1px solid grey;
+font-size: 30px;
+
+    text-align: center;
+}

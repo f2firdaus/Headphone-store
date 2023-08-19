@@ -47,6 +47,7 @@ const Headers = ({ category }) => {
               <li onClick={category}>Category</li>
             </ul>
           </nav>
+          <h1>MUSIC WAVES</h1>
           <nav className="nav-right">
             <ul>
               <li onClick={() => setShowSearch(true)}>
