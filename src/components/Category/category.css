@@ -1,0 +1,38 @@
+.category{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+.category1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    /* background-color: aqua; */
+}
+.item-name{
+    font-size: 58px;
+    padding: 5px;
+}
+.card-category{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background-color: lightgray;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+.card-category img{
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.card-category img:hover{
+    transform: scale(1.2);
+}
+.category-details{
+    font-size: 30px;
+}

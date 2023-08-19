@@ -1,0 +1,172 @@
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-details {
+  position: absolute;
+  top: 0;
+  background: white;
+  width: 340px;
+  animation: slideShow 0.3s forwards;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cart-shopping {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+
+  justify-content: space-between;
+}
+.cart-shopping :first-child {
+  font-size: 30px;
+  padding: 5px;
+}
+.cart-shopping span {
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.close-cart :hover{
+    opacity: 0.1;
+}
+.close-cart {
+  display: flex;
+  align-items: center;
+}
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  /* opacity: 0.1; */
+  margin-top: 100px;
+  
+  
+}
+.cart-empty .cart-svg{
+    font-size: 120px;
+    opacity: 0.1;
+}
+.cart-menu{
+    display: flex;
+    flex-direction: column;
+}
+.cart-all{
+  display: flex;
+  /* justify-content: space-around; */
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+.cart-count-1 span{
+    border: 1px solid lightgray;
+    /* width: 50px; */
+    font-size: 20px;
+    font-weight: 400;
+    /* display: flex; */
+    /* flex-direction:row-reverse; */
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.cart-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart-name span{
+    font-size: 20px;
+}
+.cart-price-1{
+    font-size: 10px !important;
+}
+
+.cart-name-1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.checkout{
+    position: fixed;
+    /* 
+    position: relative; */
+    bottom: 0;
+    height: 130px;
+
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.total{
+    padding: 15px;
+    display: flex;
+
+    justify-content: space-between;
+    
+}
+.chechout-btn{
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+.total-span{
+    font-weight: 800;
+    font-size: 20px;
+}
+.check-btn{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    /* padding: 20px; */
+
+}
+
+.button-1{
+  background-color: rebeccapurple;
+  padding: 14px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 180px;
+  color: white;
+  position: relative;
+  bottom: 15px;
+}
+.tprice{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+@keyframes slideShow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

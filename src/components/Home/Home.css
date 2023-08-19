@@ -1,0 +1,58 @@
+.banner{
+    
+    height: calc(100vh - 80px);
+    background-color:#5004e0;
+    overflow-y: hidden;
+    /* background:linear-gradient(rgb(0, 68, 255),rgb(9, 9, 29)) */
+}
+.container{
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+
+    align-items: center;
+}
+.image{
+    margin-top: 20px;
+}
+.sales{
+    display:flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+.sales:nth-child(1){
+    font-size: 20px;
+    /* text-align: center; */
+}
+.sales-p{
+    text-align: center;
+}
+.sales h1{
+    font-size: 180px;
+    color: white;
+    line-height: 160px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.btn1{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.btn1 ,.btn2{
+    padding: 12px;
+    cursor: pointer;
+}
+.btn1:hover{
+    opacity: 0.5;
+}
+.btn2:hover{
+    opacity: 0.5;
+}

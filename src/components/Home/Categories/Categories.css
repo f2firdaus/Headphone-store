@@ -1,0 +1,9 @@
+.categories{
+    
+}
+.image{
+    transition: all ease 0.3s;
+}
+.image:hover{
+    transform: scale(1.2);
+}
