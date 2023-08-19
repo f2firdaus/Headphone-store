@@ -23,7 +23,7 @@ const Products = () => {
                     </div>
                     <div className="details">
                     <span>{item.name}</span>
-                      <span>{item.price}</span>
+                      <span>&#8377;{item.price}</span>
                       </div>
                     </div>
                 </>

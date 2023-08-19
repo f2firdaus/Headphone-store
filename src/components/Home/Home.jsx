@@ -9,7 +9,7 @@ const Home = () => {
       <div className="banner">
         <div className="container">
           <div className="sales">
-            <h1>SALES</h1>
+            <h1>SALE</h1>
             <p className='sales-p'>Lorem ipsum dolor, sit amet consectetur adipisicing  <br />elit. Sunt repellendus, eos </p>
             <div className="button">
               <button className='btn1'>READ MORE</button>

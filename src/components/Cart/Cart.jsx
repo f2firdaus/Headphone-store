@@ -6,7 +6,9 @@ import { MdClose } from "react-icons/md";
 import { useContext } from "react";
 import { Context } from "../../context";
 import { BsCartX } from 'react-icons/bs'
+import { useNavigate } from "react-router-dom";
 const Cart = ({ setShowCart }) => {
+  const navigate=useNavigate()
 // import data from "../../data";
   const { cartItem, handleRemoveCart, totalPrice, handleQuntityCount } = useContext(Context);
   // const [myCart, setMyCart] = useState(false);
@@ -24,7 +26,10 @@ const Cart = ({ setShowCart }) => {
           {!cartItem.length && <div className="cart-empty">
                     <BsCartX className="cart-svg" />
             <span>NO PRODUCT IN THE CART</span>
-            <button className="button-1">RETURN TO SHOP</button>
+            <button className="button-1" onClick={() => {
+              navigate('/');
+              setShowCart(false)
+            }}>RETURN TO SHOP</button>
                 </div>
           }
           
