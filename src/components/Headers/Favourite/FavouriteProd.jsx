@@ -1,19 +1,31 @@
 import React, { useContext } from 'react'
 import './favproduct.css'
 import { Context } from '../../../context'
+import { useNavigate } from 'react-router-dom';
 const FavouriteProd = () => {
-    const {favItems} =useContext(Context)
+    const { favItems } = useContext(Context);
+    const navigate= useNavigate()
     return (
       <>
-            <div>FavouriteProd  </div>
-            <div>{favItems.map((item) => (
+            <div className='details'>Favourite Products  </div>
+            <div className='products'>
+                {
+                    favItems.map((item) => (
                 <>
-                    <div key={item.id}>
-                        <p>{item.name}</p>
-                        <img src={item.image} alt="" />
+                            <div className='product-map' key={item.id}>
+                                <div className="img" >
+                                
+                                    <img  onClick={() => navigate(`/product/${item.id}`)} src={item.image} alt="" width={200} />
+                                                                       
+                                </div>
+                                <div className="details">
+                                <p>{item.name}</p>
+                                    <p>{item.price}</p>
+                                    </div>
                         </div>
                 </>
             ))}</div>
+            
             </>
   )
 }
