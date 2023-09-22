@@ -3,7 +3,10 @@ export const Context = createContext();
 const AppContext = ({ children }) => {
     const [cartItem, setCartItem] = useState([]);
     const [cartCount, setCartCount] = useState(0);
-    const [totalPrice, setTotalPrice] =useState(0)
+    const [totalPrice, setTotalPrice] = useState(0);
+    // const [favCount, setFavcount] = useState(0);
+    const [favourite,setFavourite] =useState(true)
+    const [favItems, setFavItems] = useState([]);
     const handleAddItem = (product,quantity) => {
         let items = [...cartItem];
         let index = items.findIndex((p) => p.id === product.id);
@@ -14,6 +17,17 @@ const AppContext = ({ children }) => {
             items =[...items,product]
         }
         setCartItem(items);
+    }
+    const handleFavItems = (productId) => {
+        if (favItems.includes(productId)) {
+            setFavItems(favItems.filter((id) => id !== productId));
+            alert("removed from fav")
+        } else {
+            setFavItems([...favItems, productId])
+            alert("added to fav")
+        }
+        
+        
     }
     useEffect(() => {
         let totalAmount = 0;
@@ -48,7 +62,12 @@ const AppContext = ({ children }) => {
             totalPrice,
             setTotalPrice,
             handleRemoveCart,
-            handleQuntityCount
+            handleQuntityCount,
+            favourite,
+           setFavourite,
+            favItems,
+            setFavItems,
+            handleFavItems
         }}>
             {children}
         </Context.Provider>

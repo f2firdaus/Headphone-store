@@ -17,7 +17,7 @@ padding: 5px;
     width: 340px;
     /* height: 300px; */
 padding: 20px;
-cursor: pointer;
+
 /* border-radius: 10px; */
     /* border: 1px solid black; */
     display: flex;
@@ -30,13 +30,17 @@ cursor: pointer;
     border-radius: 20px;
     text-align: center;
     /* width: 250px; */
+   
     
     height: 350px;
     background-color:#f2f2f2;
 }
+
 .img img{
     position:relative;
     top: 20%;
+    cursor: pointer;
+   
     transition: all ease 0.3s;
    
 }
@@ -51,4 +55,20 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     font-size: 25px;
+}
+.favourite-heart{
+    position: relative;
+    bottom: 200px;
+    right: -120px;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.red-heart{
+    position: relative;
+    bottom: 200px;
+    right: -120px;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: red;
+    
 }

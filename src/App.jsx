@@ -9,6 +9,7 @@ import SingleProduct from './components/Products/SingleProduct/SingleProduct'
 import AppContext from './context'
 import { useRef } from 'react'
 import CartSuccess from './components/Cart/CartSuccess'
+import FavouriteProd from './components/Headers/Favourite/FavouriteProd'
 function App() {
 
   const categoryy = useRef();
@@ -26,9 +27,11 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/category/:id' element={<Category refer={categoryy} />} />
             <Route path='/product/:id' element={<SingleProduct />} />
-            <Route path='/success' element={<CartSuccess/>}/>
+            <Route path='/success' element={<CartSuccess />} />
+            <Route path='/favourite' element={<FavouriteProd/>}/>
         </Routes>
           <Footer />
+          
           </AppContext>
       </BrowserRouter>
       

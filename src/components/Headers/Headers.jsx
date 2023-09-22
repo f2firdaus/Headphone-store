@@ -53,7 +53,7 @@ const Headers = ({ category }) => {
               <li onClick={() => setShowSearch(true)}>
                 <TbSearch />
               </li>
-              <li>
+              <li onClick={()=>navigate('/favourite')}>
                 <AiOutlineHeart />
               </li>
               <li onClick={() => setShowCart(true)}>

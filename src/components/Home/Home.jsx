@@ -3,6 +3,7 @@ import banner from '../../assets/banner-img.png'
 import Products from '../Products/Products'
 import Categories from './Categories/Categories'
 import Footer from '../Footer/Footer'
+
 const Home = () => {
   return (
     <>
@@ -19,6 +20,8 @@ const Home = () => {
           </div>
           <div className="image">
             <img src={banner} alt="" width={480} />
+
+
           </div>
         </div>
       </div>

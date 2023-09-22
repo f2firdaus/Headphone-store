@@ -4,7 +4,7 @@ import data from '../../../data';
 import './singleproduct.css'
 import { Context } from '../../../context';
 const SingleProduct = () => {
-    const {cartItem,handleAddItem} =useContext(Context)
+    const { cartItem, handleAddItem } = useContext(Context);
     const [quantity, setQuantity] = useState(1);
     const { id } = useParams();
     const product = data.categories
@@ -16,6 +16,7 @@ const SingleProduct = () => {
 
     if (!product) {
         return <div>Product not found</div>;
+
     }
     
     const increment = () => {
